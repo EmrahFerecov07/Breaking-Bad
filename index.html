@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film</title>
+    <link rel="stylesheet" href="./assets/s.css" />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Film haqqinda</h1>
+    <div class="container">
+      <form action="#">
+        <label for="img">Image</label>
+        <input type="text" id="img" name="img" required /><br /><br />
+
+        <label for="filmname">Film adi</label>
+        <input type="text" id="filmname" name="filmname" required /><br /><br />
+
+        <label for="imdb">Film imdb</label>
+        <input type="text" id="imdb" name="imdb" required /><br /><br />
+
+        <label for="rejs">Rejissor</label>
+        <input type="text" id="rejs" name="rejs" required /><br /><br />
+
+        <label for="category">Kateqoriya</label>
+        <input type="text" id="category" name="category" required /><br /><br />
+
+        <select id="category" name="category" required>
+          <option value="action">Aksiyon</option>
+          <option value="kurgu">Bilim kurgu</option>
+          <option value="romantic">Romantik</option>
+          <option value="comedy">Komediya</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Filmi sec"  id="btn"/>
+        <table id="Table">
+          <tr>
+            <th>
+              <img width="200px"
+                src="https://m.media-amazon.com/images/M/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_.jpg"
+                alt=""
+                srcset=""
+              />
+            </th>
+            <th>Film adi</th>
+            <th>Film imdb</th>
+            <th>Rejissor</th>
+            <th>Kateqoriya</th>
+          </tr>
+          <tr>
+            <th>
+              <img width="200px"
+                src="https://m.media-amazon.com/images/M/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_.jpg"
+                alt=""
+                srcset=""
+              />
+            </th>
+            <th>Film adi</th>
+            <th>Film imdb</th>
+            <th>Rejissor</th>
+            <th>Kateqoriya</th>
+          </tr>
+          
+        </table>
+      </form>
+    </div>
+
+   
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
